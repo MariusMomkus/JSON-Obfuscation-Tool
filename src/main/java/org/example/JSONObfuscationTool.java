@@ -15,9 +15,9 @@ import java.util.Map;
 public class JSONObfuscationTool {
 
     public static void main(String[] args) {
-        String inputFilePath = "input.json";
-        String outputFilePath = "output.json";
-        String mapFilePath = "map.txt";
+        String inputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/input.json";
+        String outputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/output.json";
+        String mapFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/map.txt";
 
         try {
             // Read input JSON file
