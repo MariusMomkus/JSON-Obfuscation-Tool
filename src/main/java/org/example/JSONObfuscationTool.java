@@ -9,16 +9,21 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+
+
 
 public class JSONObfuscationTool {
 
     public static void main(String[] args) {
-        String inputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/input.json";
-        String outputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/output.json";
-        String mapFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/map.txt";
-
+        String inputFilePath = "./input.json";
+        String outputFilePath = "org/example/output.json";
+        String mapFilePath = "org/example/map.txt";
+//        String inputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/data/input.json";
+//        String outputFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/data/output.json";
+//        String mapFilePath = "C:/Users/Marius.Momkus/IdeaProjects/ToolT/src/main/java/org/example/data/map.txt";
         try {
             // Read input JSON file
             String jsonData = new String(Files.readAllBytes(Paths.get(inputFilePath)), StandardCharsets.UTF_8);
