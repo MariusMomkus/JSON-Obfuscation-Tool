@@ -1,1 +1,3 @@
 # JSONObfuscationTool
+
+using direct path
